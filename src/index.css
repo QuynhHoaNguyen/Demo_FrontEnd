@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    /* background-color: #cc3366; */
+    width: 990px;
+    /* 1024-30: cùng biên border mỗi bên 1-2px, mỗi border, thanh sidebar mỗi bên khoảng xx->  */
+    /* fix cứng, ko thay đổi */
+    min-height: 330px;
+    /* height: thằng con bị tràn - min-height thằng cha nở ra theo (như phỏng nguyên màn hình được) */
+    margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#header {
+    background-color: #fff8dc;
+    height: 45px;
+    color: #800000;
+    line-height: 45px;
+    text-align: center;
+    /* coi co chu */
+}
+#left-sidebar, #right-sidebar {
+    background-color: #FFEBCD;
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin: 5px 0px;
+}
+#content {
+    background-color: #FFE4C4;
+    width: 580px;
+    height: 400px;
+    float: left;
+    margin: 5px;
+}
+
+#footer {
+    color: #800000;
+    text-align: center;
+    line-height: 45px;
+    /* height = line-height -> dòng văn bản nằm giữa ô */
+    background-color: #DEB887;
+    height: 45px;
+    clear: both;
+}
+
+.menu{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li{
+    background-color: #F5DEB3;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    color: #800000;
+}
+
+.menu li:hover{
+    background-color: #F0FFF0;
+}
+
+.sub-menu{
+    background-color: #FFF0F5;
+    width: 150px;
+    list-style: none;
+    margin: -35px 0px 0px 190px;
+    margin: 0px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.sub-menu li{
+    background-color: 	#FFF5EE;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.menu li:hover .sub-menu{
+    visibility: visible;
 }
