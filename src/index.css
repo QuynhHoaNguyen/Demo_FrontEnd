@@ -2,6 +2,10 @@ body{
     margin: 0px;
     padding: 0px;
 }
+h3{
+    color: #800000;
+    text-align: center;
+}
 #container{
     /* background-color: #cc3366; */
     width: 990px;
@@ -17,8 +21,8 @@ body{
     height: 45px;
     color: #800000;
     line-height: 45px;
-    text-align: center;
-    /* coi co chu */
+    
+    font-size: 50px;
 }
 #left-sidebar, #right-sidebar {
     background-color: #FFEBCD;
@@ -48,7 +52,7 @@ body{
 .menu{
     list-style: none;
     padding: 0px;
-    margin: 0px;
+    /* margin: 35px 0px 0px 0px; */
 }
 
 .menu li{
@@ -57,6 +61,7 @@ body{
     line-height: 35px;
     padding-left: 10px;
     color: #800000;
+    
 }
 
 .menu li:hover{
@@ -82,4 +87,15 @@ body{
 
 .menu li:hover .sub-menu{
     visibility: visible;
+}
+
+.bar{
+    list-style: none;
+    background-color: #DEB887;
+    color: #800000;
+    display: inline-block;
+    width: 540px;
+    height: 35px;
+    margin: 0px;
+
 }
